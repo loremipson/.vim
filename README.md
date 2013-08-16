@@ -1,3 +1,5 @@
+## Getting set up
+
 Make sure you're in your user directory:
 
 `cd`
@@ -17,3 +19,13 @@ Create symbolic links to the repository vimrc and gvimrc files.
 	ln -s .vim/.gvimrc .gvimrc
 
 You should be set now. Cowabunga!
+
+## vim Packages
+
+This configuration uses [pathogen](http://www.vim.org/scripts/script.php?script_id=2332), so it's a good idea to include any packages as git submodules. Make sure they're cloned to the `/bundle` directory.
+
+ie:
+
+    cd ~/.vim
+	
+	git submodule add git://github.com/path_to/plugin_url.git bundle/plugin_name --recursive
