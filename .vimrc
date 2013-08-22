@@ -47,8 +47,6 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
-set smartcase
 
 " Highlight search results
 set hlsearch
@@ -93,14 +91,14 @@ set nowb
 set noswapfile
 
 " Use spaces instead of tabs
-"# set expandtab
+set expandtab
 
 " Be smart when using tabs 
-"# set smarttab
+set smarttab
 
 " 1 tab == 2 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
