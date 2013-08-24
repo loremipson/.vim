@@ -46,3 +46,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = git://github.com/briancollins/vim-jst.git
