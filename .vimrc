@@ -76,7 +76,7 @@ let g:indentLine_char = '┆'
 
 syntax enable " Enable syntax highlighting:
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-tomorrow " Set color scheme
+colorscheme base16-ocean " Set color scheme
 set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
