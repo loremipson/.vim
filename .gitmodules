@@ -55,3 +55,9 @@
 [submodule "bundle/handlebars"]
 	path = bundle/handlebars
 	url = git://github.com/nono/vim-handlebars.git
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = git@github.com:nanotech/jellybeans.vim.git
+[submodule "bundle/wombat256"]
+	path = bundle/wombat256
+	url = git@github.com:vim-scripts/wombat256.vim.git

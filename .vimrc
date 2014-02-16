@@ -47,7 +47,6 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-
 " Highlight search results
 set hlsearch
 
@@ -74,9 +73,10 @@ set tm=500
 " Configure indent line plugin
 let g:indentLine_char = '┆'
 
+syntax on
 syntax enable " Enable syntax highlighting:
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-ocean " Set color scheme
+colorscheme jellybeans " Set color scheme
 set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -235,7 +235,7 @@ map <leader>t :NERDTreeToggle<cr>
 " Show cursor line
 set cursorline
 
-" Set vertical rule at 80 characters
+" Set vertical rule at 150 characters
 set colorcolumn=150
 
 " => Helper functions
