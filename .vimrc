@@ -100,9 +100,8 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
-" Airline options
-let g:airline_powerline_fonts = 1
-let g:airline_detect_whitespace = 0
+" Use tabs instead of spaces for go
+autocmd Filetype go setlocal noexpandtab
 
 " Linebreak on 500 characters
 set lbr
@@ -241,6 +240,10 @@ set cursorline
 
 " Set vertical rule at 150 characters
 set colorcolumn=150
+
+" Airline options
+let g:airline_powerline_fonts = 1
+let g:airline_detect_whitespace = 0
 
 " => Helper functions
 
