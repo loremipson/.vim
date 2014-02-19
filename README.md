@@ -6,7 +6,7 @@ Make sure you're in your user directory:
 
 Now, clone this repository down to your user folder.
 
-`git clone git@github.com:Implemint/.vim.git --recursive`
+`git clone git@github.com:loremipson/.vim.git --recursive`
 
 Note: Include the `--recursive` so that all the submodule dependencies clone down as well. Otherwise you'll need to run:
 
