@@ -85,7 +85,7 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
+" Turn backup off, since most stuff is in SVN, git etc anyway...
 set nobackup
 set nowb
 set noswapfile
@@ -99,6 +99,10 @@ set smarttab
 " 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
+
+" Airline options
+let g:airline_powerline_fonts = 1
+let g:airline_detect_whitespace = 0
 
 " Linebreak on 500 characters
 set lbr
