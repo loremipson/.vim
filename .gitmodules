@@ -79,3 +79,6 @@
 [submodule "bundle/vim-yaml"]
 	path = bundle/vim-yaml
 	url = git@github.com:stephpy/vim-yaml.git
+[submodule "bundle/scss-syntax.vim"]
+	path = bundle/scss-syntax.vim
+	url = git@github.com:cakebaker/scss-syntax.vim.git
