@@ -77,7 +77,7 @@ syntax on
 syntax enable " Enable syntax highlighting:
 let base16colorspace=256  " Access colors present in 256 colorspace
 set t_Co=256 " Tell vim terminal supports 256 colors
-colorscheme jellybeans " Set color scheme
+colorscheme flatland " Set color scheme
 set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -149,6 +149,11 @@ autocmd BufReadPost *
      \ endif
 " Remember info about open buffers on close
 set viminfo^=%
+
+" Disable the ugly scrollbar in MacVim with Nerdtree
+set guioptions-=L
+" Disable it on the right too.. it's ugly, you know?
+set guioptions-=r
 
 " Always show the status line
 set laststatus=2
