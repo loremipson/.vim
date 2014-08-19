@@ -85,3 +85,9 @@
 [submodule "bundle/flatland.vim"]
 	path = bundle/flatland.vim
 	url = git@github.com:vivkin/flatland.vim.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = git://github.com/terryma/vim-multiple-cursors.git
