@@ -76,6 +76,7 @@ let g:indentLine_char = '┆'
 syntax on
 syntax enable " Enable syntax highlighting:
 let base16colorspace=256  " Access colors present in 256 colorspace
+set t_Co=256 " Tell vim terminal supports 256 colors
 colorscheme jellybeans " Set color scheme
 set background=dark
 
