@@ -103,3 +103,6 @@
 [submodule "bundle/clsnippets"]
 	path = bundle/clsnippets
 	url = https://github.com/loremipson/clsnippets.git
+[submodule "bundle/seoul256.vim"]
+	path = bundle/seoul256.vim
+	url = git@github.com:junegunn/seoul256.vim.git
