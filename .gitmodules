@@ -106,3 +106,6 @@
 [submodule "bundle/seoul256.vim"]
 	path = bundle/seoul256.vim
 	url = git@github.com:junegunn/seoul256.vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = git://github.com/sjl/gundo.vim.git

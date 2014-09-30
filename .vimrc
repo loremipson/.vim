@@ -14,10 +14,9 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-"let mapleader = ","
-"let g:mapleader = ","
+" Set the spacebar to the leader key
+let mapleader = " "
+let g:mapleader = " "
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -116,10 +115,6 @@ set wrap "Wrap lines
 " Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :call VisualSelection('f')<CR>
 vnoremap <silent> # :call VisualSelection('b')<CR>
-
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><space> :noh<cr>
@@ -240,6 +235,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " Toggle NERDTree with leader-t
 map <leader>t :NERDTreeToggle<cr>
+
+" Toggle Gundo with leader-u
+map <leader>u :GundoToggle<cr>
 
 " Show cursor line
 set cursorline
