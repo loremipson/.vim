@@ -75,12 +75,14 @@ set tm=500
 " Configure indent line plugin
 let g:indentLine_char = '┆'
 
-syntax on
-syntax enable " Enable syntax highlighting:
-let base16colorspace=256  " Access colors present in 256 colorspace
-set t_Co=256 " Tell vim terminal supports 256 colors
-colorscheme base16-tomorrow " Set color scheme
 set background=dark
+"syntax on
+syntax enable " Enable syntax highlighting:
+"let base16colorspace=256  " Access colors present in 256 colorspace
+set t_Co=256 " Tell vim terminal supports 256 colors
+
+let g:seoul256_background = 233
+colorscheme seoul256 " Set color scheme
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8

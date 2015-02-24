@@ -112,3 +112,12 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = git://github.com/mxw/vim-jsx.git
+[submodule "bundle/Revolution.vim"]
+	path = bundle/Revolution.vim
+	url = https://github.com/CruizeMissile/Revolution.vim.git
+[submodule "bundle/flattown"]
+	path = bundle/flattown
+	url = https://github.com/blerins/flattown.git
+[submodule "bundle/vim-abra"]
+	path = bundle/vim-abra
+	url = https://github.com/abra/vim-abra.git
