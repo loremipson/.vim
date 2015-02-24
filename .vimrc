@@ -18,6 +18,9 @@ set autoread
 let mapleader = " "
 let g:mapleader = " "
 
+" Set JSX to .js files
+let g:jsx_ext_required = 0
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
