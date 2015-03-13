@@ -121,3 +121,18 @@
 [submodule "bundle/vim-abra"]
 	path = bundle/vim-abra
 	url = https://github.com/abra/vim-abra.git
+[submodule "bundle/vim-gotham"]
+	path = bundle/vim-gotham
+	url = https://github.com/whatyouhide/vim-gotham.git
+[submodule "bundle/vim-atom-dark"]
+	path = bundle/vim-atom-dark
+	url = git@github.com:gosukiwi/vim-atom-dark.git
+[submodule "bundle/gruvbox"]
+	path = bundle/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
+[submodule "bundle/vim-hybrid"]
+	path = bundle/vim-hybrid
+	url = git@github.com:w0ng/vim-hybrid.git
+[submodule "bundle/vim-react-snippets"]
+	path = bundle/vim-react-snippets
+	url = git@github.com:justinj/vim-react-snippets.git

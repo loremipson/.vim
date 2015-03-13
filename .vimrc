@@ -15,8 +15,8 @@ set t_Co=256 " Tell vim terminal supports 256 colors
 
 filetype plugin indent on
 
-let g:seoul256_background = 233 " Set seoul256 background darkness
-colorscheme seoul256
+"//let g:seoul256_background = 233 " Set seoul256 background darkness
+colorscheme hybrid
 
 " -----------
 " General Settings
