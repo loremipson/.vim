@@ -208,7 +208,7 @@ map <leader>q :e ~/buffer<cr>
 map <leader>pp :setlocal paste!<cr>
 
 let g:netrw_liststyle=3
-map <leader>t :Ex<cr>
+map <leader>t :Vex<cr>
 
 " Toggle Gundo with leader-u
 map <leader>u :GundoToggle<cr>
