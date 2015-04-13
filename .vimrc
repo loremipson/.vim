@@ -96,11 +96,6 @@ set nobackup nowb noswapfile
 " Remember info about open buffers on close
 set viminfo^=%
 
-" Disable the ugly scrollbar in MacVim with Nerdtree
-set guioptions-=L
-" Disable it on the right too.. it's ugly, you know?
-set guioptions-=r
-
 " Always show the status line
 set laststatus=2
 
@@ -212,17 +207,18 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-" Open a NERDTree automatically when vim starts up if no files were specified?
-autocmd vimenter * if !argc() | NERDTree | endif
-
-" Close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" Toggle NERDTree with leader-t
-map <leader>t :NERDTreeToggle<cr>
+let g:netrw_liststyle=3
+map <leader>t :Ex<cr>
 
 " Toggle Gundo with leader-u
 map <leader>u :GundoToggle<cr>
+
+" Set up Unite mappings
+" Make it function like ctrl+p with leader-f
+nnoremap <leader>f :Unite -start-insert file<cr>
+
+" Open buffer menu with leader-b
+nnoremap <leader>b :Unite buffer<cr>
 
 " Show cursor line
 set cursorline
