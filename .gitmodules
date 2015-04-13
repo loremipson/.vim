@@ -136,3 +136,9 @@
 [submodule "bundle/vim-react-snippets"]
 	path = bundle/vim-react-snippets
 	url = git@github.com:justinj/vim-react-snippets.git
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = git@github.com:Shougo/unite.vim.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git://github.com/tpope/vim-vinegar.git
