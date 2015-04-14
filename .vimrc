@@ -105,6 +105,10 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " Use tabs instead of spaces for go
 autocmd Filetype go setlocal noexpandtab
 
+" When using Goyo, automatically go into it with Limelight
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
+
 " ------------
 " General Mappings
 " ------------
