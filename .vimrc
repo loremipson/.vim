@@ -140,7 +140,7 @@ nnoremap <expr> gj v:count == 0 ? 'j' : 'gj'
 nnoremap <expr> gk v:count == 0 ? 'k' : 'gk'
 
 " Add semicolon to the end of line in insert mode
-imap <C-s> <C-o>A;
+inoremap <leader>; <C-o>A;
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>
