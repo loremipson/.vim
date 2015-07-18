@@ -30,6 +30,7 @@ set ruler
 set showcmd
 set cmdheight=1
 set wildmenu
+set cursorline
 
 set nrformats-=octal
 
@@ -77,6 +78,25 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Spell check
 map <leader>ss :setlocal spell!<cr>
+
+" Add semicolon to the end of the line while in insert mode
+inoremap <leader>; <C-o>A;
+
+" Plugin mappings
+" ------------
+" Fugitive
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gd :Gdiff<bar>wincmd p<cr>
+nnoremap <leader>gs :Gstatus<cr>
+
+" Unite
+nnoremap <leader>f :Unite -start-insert file<cr>
+nnoremap <leader>b :Unite buffer<cr>
+
+" Plugin settings
+" -------------
+" Airline
+let g:airline#extensions#tabline#enabled=1
 
 if !&scrolloff
   set scrolloff=1
