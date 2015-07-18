@@ -31,6 +31,8 @@ set showcmd
 set cmdheight=1
 set wildmenu
 set cursorline
+set background=dark
+colorscheme gruvbox
 
 set nrformats-=octal
 
