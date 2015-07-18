@@ -82,6 +82,10 @@ map <leader>ss :setlocal spell!<cr>
 " Add semicolon to the end of the line while in insert mode
 inoremap <leader>; <C-o>A;
 
+" Set netrw to a tree style listing
+let g:netrw_liststyle=3
+map <leader>t :silent Vex<cr>
+
 " Plugin mappings
 " ------------
 " Fugitive
