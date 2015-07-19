@@ -20,7 +20,7 @@ set complete-=i
 let g:mapleader = " "
 
 " UI
-set number
+set relativenumber
 set showmatch
 set mat=2
 set hid
