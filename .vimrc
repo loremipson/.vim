@@ -61,6 +61,12 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Return to last edit position when opening files
+autocmd BufReadPost *
+  \ if line("'\"") > 0 && line("'\"") <= line("$") |
+  \ exe "normal! g`\"" |
+  \ endif
+
 " Don't use backup, since everything is in git
 set nobackup nowb noswapfile
 
@@ -69,9 +75,6 @@ let g:jsx_ext_required=0
 
 " Leader mappings
 " ------------
-" Close current buffer
-map <leader>bd :Bclose<cr>
-
 " Close all buffers
 map <leader>ba :1,1000 bd!<cr>
 
@@ -96,8 +99,9 @@ nnoremap <leader>gd :Gdiff<bar>wincmd p<cr>
 nnoremap <leader>gs :Gstatus<cr>
 
 " Unite
-nnoremap <leader>f :Unite -start-insert file<cr>
+nnoremap <leader>f :Unite -start-insert file_rec<cr>
 nnoremap <leader>b :Unite buffer<cr>
+nnoremap <leader>/ :Unite -start-insert line<cr>
 
 " Plugin settings
 " -------------
