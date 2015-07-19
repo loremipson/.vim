@@ -33,6 +33,7 @@ set wildmenu
 set cursorline
 set background=dark
 colorscheme gruvbox
+set display+=lastline
 
 set nrformats-=octal
 
@@ -46,6 +47,14 @@ set ignorecase
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
+if !&scrolloff
+  set scrolloff=1
+endif
+
+if !&sidescrolloff
+  set sidescrolloff=5
 endif
 
 " Indenting
@@ -69,6 +78,12 @@ autocmd BufReadPost *
 
 " Don't use backup, since everything is in git
 set nobackup nowb noswapfile
+
+" Smart way to move between splits
+nnoremap <silent> <C-j> <C-W>j
+nnoremap <silent> <C-k> <C-W>k
+nnoremap <silent> <C-h> <C-W>h
+nnoremap <silent> <C-l> <C-W>l
 
 " Set jsx to .js files
 let g:jsx_ext_required=0
@@ -107,16 +122,6 @@ nnoremap <leader>/ :Unite -start-insert line<cr>
 " -------------
 " Airline
 let g:airline#extensions#tabline#enabled=1
-
-if !&scrolloff
-  set scrolloff=1
-endif
-
-if !&sidescrolloff
-  set sidescrolloff=5
-endif
-
-set display+=lastline
 
 if &encoding ==# 'latin1' && has('gui_running')
   set encoding=utf-8
@@ -167,9 +172,3 @@ if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
 endif
 
 inoremap <C-U> <C-G>u<C-U>
-
-" Smart way to move between splits
-nnoremap <silent> <C-j> <C-W>j
-nnoremap <silent> <C-k> <C-W>k
-nnoremap <silent> <C-h> <C-W>h
-nnoremap <silent> <C-l> <C-W>l
