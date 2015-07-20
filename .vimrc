@@ -20,7 +20,7 @@ set complete-=i
 let g:mapleader = " "
 
 " UI
-set relativenumber
+set relativenumber number " Hybrid mode, shows relative numbers with the current line being the actual number, rather than 0
 set showmatch
 set mat=2
 set hid
@@ -63,6 +63,10 @@ set smarttab expandtab
 set softtabstop=2 shiftwidth=2 shiftround
 set nofoldenable
 set wrap
+" Reselect visual block after indenting
+" This makes it so you can't use the repeater . key
+" vnoremap < <gv
+" vnoremap > >gv
 
 " No annoying sound on errors
 set noerrorbells
