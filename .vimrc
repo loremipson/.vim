@@ -34,6 +34,7 @@ set cursorline
 set background=dark
 colorscheme gruvbox
 set display+=lastline
+set hidden
 
 set nrformats-=octal
 
@@ -44,6 +45,7 @@ set ttimeoutlen=100
 set hlsearch
 set incsearch
 set ignorecase
+set smartcase
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
