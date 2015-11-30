@@ -43,3 +43,9 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
+[submodule "bundle/yajs.vim"]
+	path = bundle/yajs.vim
+	url = git@github.com:othree/yajs.vim.git
+[submodule "bundle/es.next.syntax.vim"]
+	path = bundle/es.next.syntax.vim
+	url = git@github.com:othree/es.next.syntax.vim.git
