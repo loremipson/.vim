@@ -35,6 +35,7 @@ set background=dark
 colorscheme gruvbox
 set display+=lastline
 set hidden
+set clipboard=unnamed
 
 set nrformats-=octal
 
