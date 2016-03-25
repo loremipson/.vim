@@ -1,4 +1,4 @@
-" Plugins 
+" Plugins
 " -----------
 " load pathogen
 execute pathogen#infect()
@@ -17,6 +17,8 @@ set complete-=i
 " Mappings
 " -------
 " Set leader to the spacebar
+nnoremap <space> <Nop>
+let mapleader = " "
 let g:mapleader = " "
 
 " UI
@@ -25,6 +27,7 @@ set showmatch
 set mat=2
 set hid
 set magic
+set colorcolumn=91
 set laststatus=2
 set ruler
 set showcmd
@@ -47,10 +50,9 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
+
+" Use <leader>l to clear the highlighting of :set hlsearch.
+map <silent> <leader>l :noh<cr>
 
 if !&scrolloff
   set scrolloff=1
