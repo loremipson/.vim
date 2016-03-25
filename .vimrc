@@ -2,6 +2,7 @@
 " -----------
 " load pathogen
 execute pathogen#infect()
+execute pathogen#helptags()
 
 if has('autocmd')
   filetype plugin indent on
