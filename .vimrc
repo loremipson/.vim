@@ -90,10 +90,10 @@ autocmd BufReadPost *
 set nobackup nowb noswapfile
 
 " Smart way to move between splits
-nnoremap <silent> <C-j> <C-W>j
-nnoremap <silent> <C-k> <C-W>k
-nnoremap <silent> <C-h> <C-W>h
-nnoremap <silent> <C-l> <C-W>l
+" nnoremap <silent> <C-j> <C-W>j
+" nnoremap <silent> <C-k> <C-W>k
+" nnoremap <silent> <C-h> <C-W>h
+" nnoremap <silent> <C-l> <C-W>l
 
 " Set jsx to .js files
 let g:jsx_ext_required=0
@@ -113,7 +113,7 @@ map <leader>ss :setlocal spell!<cr>
 inoremap <leader>; <C-o>A;
 
 " Set netrw to a tree style listing
-let g:netrw_liststyle=3
+let g:netrw_liststyle=4
 map <leader>t :silent Vex<cr>
 
 " Plugin mappings
