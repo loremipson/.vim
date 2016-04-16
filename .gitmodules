@@ -31,6 +31,7 @@
 [submodule "bundle/vim-signify"]
 	path = bundle/vim-signify
 	url = git@github.com:mhinz/vim-signify.git
+        ignore = dirty
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
