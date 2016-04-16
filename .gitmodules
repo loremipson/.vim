@@ -55,9 +55,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
-[submodule "bundle/vim-multiple-cursors"]
-	path = bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
 [submodule "bundle/vim-node"]
 	path = bundle/vim-node
 	url = git@github.com:moll/vim-node.git
