@@ -65,3 +65,6 @@
 [submodule "bundle/vim-startify"]
 	path = bundle/vim-startify
 	url = git@github.com:mhinz/vim-startify.git
+[submodule "bundle/pangloss-vim-indent"]
+	path = bundle/pangloss-vim-indent
+	url = git@github.com:rschmukler/pangloss-vim-indent.git
