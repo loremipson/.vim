@@ -189,3 +189,6 @@ let g:neocomplete#enable_smart_case = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+
+" Only show flow if there are actual errors and autoclose when they're fixed.
+let g:flow#autoclose = 1

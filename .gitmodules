@@ -68,3 +68,6 @@
 [submodule "bundle/pangloss-vim-indent"]
 	path = bundle/pangloss-vim-indent
 	url = git@github.com:rschmukler/pangloss-vim-indent.git
+[submodule "bundle/vim-flow"]
+	path = bundle/vim-flow
+	url = https://github.com/flowtype/vim-flow
