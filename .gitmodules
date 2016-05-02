@@ -74,3 +74,6 @@
 [submodule "bundle/vim-characterize"]
 	path = bundle/vim-characterize
 	url = git@github.com:tpope/vim-characterize.git
+[submodule "bundle/vim-eunuch"]
+	path = bundle/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
