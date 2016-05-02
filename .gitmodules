@@ -71,3 +71,6 @@
 [submodule "bundle/vim-flow"]
 	path = bundle/vim-flow
 	url = https://github.com/flowtype/vim-flow
+[submodule "bundle/vim-characterize"]
+	path = bundle/vim-characterize
+	url = git@github.com:tpope/vim-characterize.git
