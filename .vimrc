@@ -46,6 +46,12 @@ set nrformats-=octal
 set ttimeout
 set ttimeoutlen=100
 
+" code folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 " Searching
 set hlsearch
 set incsearch
@@ -69,10 +75,6 @@ set smarttab expandtab
 set softtabstop=2 shiftwidth=2 shiftround
 set nofoldenable
 set wrap
-" Reselect visual block after indenting
-" This makes it so you can't use the repeater . key
-" vnoremap < <gv
-" vnoremap > >gv
 
 " No annoying sound on errors
 set noerrorbells
