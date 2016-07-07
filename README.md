@@ -18,7 +18,7 @@ Create symbolic links to the repository vimrc and gvimrc files.
     ln -s .vim/.vimrc .vimrc
 	ln -s .vim/.gvimrc .gvimrc
 
-You should be set now. Cowabunga!
+You should be set now.
 
 ## vim Packages
 
