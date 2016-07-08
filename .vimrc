@@ -22,6 +22,10 @@ nnoremap <space> <Nop>
 let mapleader = " "
 let g:mapleader = " "
 
+" Useful for editing vimrc file
+nnoremap <Leader>rc :e $MYVIMRC<cr>
+nnoremap <Leader>rl :so $MYVIMRC<cr>
+
 " UI
 set relativenumber number " Hybrid mode, shows relative numbers with the current line being the actual number, rather than 0
 set showmatch
@@ -36,6 +40,7 @@ set cmdheight=1
 set wildmenu
 set cursorline
 set background=dark
+let g:gruvbox_contrast_dark="soft"
 colorscheme gruvbox
 set display+=lastline
 set hidden
