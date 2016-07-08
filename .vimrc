@@ -22,9 +22,10 @@ nnoremap <space> <Nop>
 let mapleader = " "
 let g:mapleader = " "
 
-" Useful for editing vimrc file
-nnoremap <Leader>rc :e $MYVIMRC<cr>
-nnoremap <Leader>rl :so $MYVIMRC<cr>
+" Auto reload my vimrc when edits are made
+augroup vimrc
+augroup END
+autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
 
 " UI
 set relativenumber number " Hybrid mode, shows relative numbers with the current line being the actual number, rather than 0
