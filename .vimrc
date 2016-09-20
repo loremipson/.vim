@@ -22,11 +22,6 @@ nnoremap <space> <Nop>
 let mapleader = " "
 let g:mapleader = " "
 
-" Auto reload my vimrc when edits are made
-augroup vimrc
-augroup END
-autocmd vimrc BufWritePost $MYVIMRC source $MYVIMRC
-
 " UI
 set relativenumber number " Hybrid mode, shows relative numbers with the current line being the actual number, rather than 0
 set showmatch
@@ -66,6 +61,9 @@ set smartcase
 
 " Use <leader>l to clear the highlighting of :set hlsearch.
 map <silent> <leader>l :noh<cr>
+
+" Use <leader>ll to trigger Limelight + Goyo for presentations.
+nmap <leader>ll :Limelight!!<cr>
 
 if !&scrolloff
   set scrolloff=1
@@ -200,3 +198,10 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 
 " Only show flow if there are actual errors and autoclose when they're fixed.
 let g:flow#autoclose = 1
+
+" Limelight
+let g:limelight_conceal_ctermfg = 238
+
+" Launch Limelight when Goyo is triggered
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
