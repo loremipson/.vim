@@ -36,11 +36,14 @@ set cmdheight=1
 set wildmenu
 set cursorline
 set background=dark
-let g:gruvbox_contrast_dark="soft"
-colorscheme gruvbox
+"let g:gruvbox_contrast_dark="soft"
+"colorscheme gruvbox
+colorscheme nova
 set display+=lastline
 set hidden
-set clipboard=unnamed
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
 
 set nrformats-=octal
 
