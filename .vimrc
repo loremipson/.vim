@@ -36,9 +36,9 @@ set cmdheight=1
 set wildmenu
 set cursorline
 set background=dark
-"let g:gruvbox_contrast_dark="soft"
-"colorscheme gruvbox
-colorscheme nova
+let g:gruvbox_contrast_dark="soft"
+colorscheme gruvbox
+"colorscheme nova
 set display+=lastline
 set hidden
 if $TMUX == ''
@@ -105,7 +105,7 @@ set nobackup nowb noswapfile
 " nnoremap <silent> <C-l> <C-W>l
 
 " Set jsx to .js files
-let g:jsx_ext_required=0
+let g:jsx_ext_required = 0
 
 " Leader mappings
 " ------------
@@ -208,3 +208,5 @@ let g:limelight_conceal_ctermfg = 238
 " Launch Limelight when Goyo is triggered
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+set t_ut=
