@@ -5,11 +5,11 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 if has('autocmd')
-  filetype plugin indent on
+    filetype plugin indent on
 endif
 
 if has('syntax') && !exists('g:syntax_on')
-  syntax enable
+    syntax enable
 endif
 
 set backspace=indent,eol,start
@@ -28,7 +28,7 @@ set showmatch
 set mat=2
 set hid
 set magic
-set colorcolumn=91
+set colorcolumn=120
 set laststatus=2
 set ruler
 set showcmd
@@ -42,7 +42,7 @@ colorscheme gruvbox
 set display+=lastline
 set hidden
 if $TMUX == ''
-  set clipboard+=unnamed
+    set clipboard+=unnamed
 endif
 
 set nrformats-=octal
@@ -69,17 +69,17 @@ map <silent> <leader>l :noh<cr>
 nmap <leader>ll :Limelight!!<cr>
 
 if !&scrolloff
-  set scrolloff=1
+    set scrolloff=1
 endif
 
 if !&sidescrolloff
-  set sidescrolloff=5
+    set sidescrolloff=5
 endif
 
 " Indenting
 set autoindent
 set smarttab expandtab
-set softtabstop=2 shiftwidth=2 shiftround
+set softtabstop=4 shiftwidth=4 shiftround
 set nofoldenable
 set wrap
 
@@ -91,9 +91,9 @@ set tm=500
 
 " Return to last edit position when opening files
 autocmd BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-  \ exe "normal! g`\"" |
-  \ endif
+            \ if line("'\"") > 0 && line("'\"") <= line("$") |
+            \ exe "normal! g`\"" |
+            \ endif
 
 " Don't use backup, since everything is in git
 set nobackup nowb noswapfile
@@ -143,23 +143,23 @@ nnoremap <leader>/ :Unite -start-insert line<cr>
 let g:airline#extensions#tabline#enabled=1
 
 if &encoding ==# 'latin1' && has('gui_running')
-  set encoding=utf-8
+    set encoding=utf-8
 endif
 
 if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+    set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 endif
 
 if v:version > 703 || v:version == 703 && has('patch541')
-  set formatoptions+=j " Delete comment character when joining commented lines
+    set formatoptions+=j " Delete comment character when joining commented lines
 endif
 
 if has('path_extra')
-  setglobal tags-=./tags tags-=./tags; tags^=./tags;
+    setglobal tags-=./tags tags-=./tags; tags^=./tags;
 endif
 
 if &shell =~# 'fish$'
-  set shell=/bin/bash
+    set shell=/bin/bash
 endif
 
 set autoread
@@ -167,27 +167,27 @@ set autowrite
 set fileformats+=mac
 
 if &history < 1000
-  set history=1000
+    set history=1000
 endif
 
 if &tabpagemax < 50
-  set tabpagemax=50
+    set tabpagemax=50
 endif
 
 if !empty(&viminfo)
-  set viminfo^=!
+    set viminfo^=!
 endif
 
 set sessionoptions-=options
 
 " Allow color schemes to do bright colors without forcing bold.
 if &t_Co == 8 && $TERM !~# '^linux'
-  set t_Co=16
+    set t_Co=16
 endif
 
 " Load matchit.vim, but only if the user hasn't installed a newer version.
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  runtime! macros/matchit.vim
+    runtime! macros/matchit.vim
 endif
 
 inoremap <C-U> <C-G>u<C-U>
