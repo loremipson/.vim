@@ -79,7 +79,7 @@ endif
 " Indenting
 set autoindent
 set smarttab expandtab
-set softtabstop=4 shiftwidth=4 shiftround
+set softtabstop=2 shiftwidth=2 shiftround
 set nofoldenable
 set wrap
 
