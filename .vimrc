@@ -192,6 +192,12 @@ endif
 
 inoremap <C-U> <C-G>u<C-U>
 
+"mucomplete
+set showmode shortmess+=c
+set completeopt-=preview
+set completeopt+=longest,menu,menuone,noinsert,noselect
+let g:mucomplete#enable_auto_at_startup = 1
+
 " Only show flow if there are actual errors and autoclose when they're fixed.
 let g:flow#autoclose = 1
 
